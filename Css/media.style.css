@@ -1,0 +1,602 @@
+/* tablet screens */
+@media (max-width: 1023px) {
+    .sidebar {
+        width: 8%;
+        padding: 12px;
+    }
+
+    .logo {
+        gap: 12px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .logo-icon {
+        width: 55px;
+        height: 50px;
+    }
+
+    .logo-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-title {
+        display: none;
+    }
+
+    /* navigation list */
+    .main-nav ul {
+        margin-bottom: 20px;
+    }
+
+    .main-nav li {
+        padding: 12px 8px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .main-nav i {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .quick-actions {
+        flex-direction: column;
+
+    }
+
+    .quick-actions button {
+        padding-inline: 0;
+        padding-block: 4px;
+        font-size: 0;
+        justify-content: center;
+        gap: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .quick-actions button:hover {
+        transform: translateX(2px);
+    }
+
+    .button.icon {
+        width: 45px;
+        height: 45px;
+
+    }
+
+    /* main content */
+    .main-content {
+        margin: 4%;
+        margin-right: 11%;
+    }
+
+    .header {
+        margin: 0px;
+        margin-bottom: 38px;
+    }
+
+    /* summary cards */
+    .summary-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card-header {
+        margin-bottom: 8px;
+        font-size: 13px;
+    }
+
+    .summary-card-amount {
+        font-size: 26px;
+    }
+
+    .summary-card-change {
+        margin-top: 8px;
+    }
+
+    /* dashboard grid — chart + activities | transactions | 2×2 cards */
+    .dashboard-widgets {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        align-items: start;
+    }
+
+    .dashboard-middle {
+        display: contents;
+    }
+
+    .chart-card {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities-list {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities-list > h3 {
+        margin-bottom: 16px;
+    }
+
+    .green-card {
+        margin-bottom: 12px;
+    }
+
+    .view-all-activities {
+        margin-top: auto;
+        padding-top: 12px;
+    }
+
+    .chart-card .chart-container {
+        flex: 1;
+        align-items: end;
+    }
+
+    .transactions-card {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        height: auto;
+        max-height: none;
+    }
+
+    .account-summary {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-summary .accounts-list {
+        flex: 1;
+    }
+
+    .account-summary .account-item {
+        flex: 1;
+    }
+
+    .bills-card {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bills-card .bills-grid {
+        flex: 1;
+        align-content: stretch;
+    }
+
+    .bills-card .bill-item {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .payment-card-container {
+        grid-column: 2;
+        grid-row: 4;
+        align-self: start;
+    }
+
+    .budget-card {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: start;
+    }
+
+    /* chart sizing */
+    .chart-container {
+        column-gap: 12px;
+    }
+
+    .bars-wrapper {
+        height: 130px;
+    }
+
+    .bar {
+        width: 14px;
+    }
+
+    /* transactions table compact */
+    .transactions-table {
+        font-size: 13px;
+    }
+
+    .transactions-table thead th {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+
+    .transactions-table tbody td {
+        padding: 10px 8px;
+    }
+
+    .user-cell .avatar,
+    .user-cell .icon-avatar {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+
+    /* payment cards */
+    .flip-card {
+        height: 190px;
+    }
+}
+
+
+/* mobile screens */
+@media (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 12px 16px;
+        overflow-x: hidden;
+    }
+
+    /* header styles */
+    .header {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 22px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .header-right {
+        display: flex;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .brand {
+        gap: 10px;
+
+    }
+
+    .brand-icon {
+        width: 45px;
+        height: 50px;
+        border-radius: 12px;
+    }
+
+    .brand-icon img{
+        width: 20px;
+        height: 18px;
+    }
+     .brand-title {
+        text-align: right;
+    }
+
+    .brand-title h1 {
+        font-size: 24px;
+    }
+
+    .brand-title p {
+        font-size: 12px;
+    }
+
+    .header .status {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        justify-content: center;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .header .status .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .header-left {
+        gap: 4px;
+        width: 100%;
+    }
+
+    .icon-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .icon-btn .badge {
+        top: -4px;
+        right: -4px;
+        padding: 1px 3px;
+        font-size: 10px;
+    }
+
+    .icon-btn i {
+        font-size: 12px;
+    }
+
+    .profile-card {
+        position: absolute;
+        left: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        padding: 6px;
+    }
+
+    .profile-card .profile-info {
+        display: none;
+    }
+
+    .profile-card .avatar {
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    /* summary cards */
+    .summary-cards {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .summary-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 18px;
+    }
+
+    .summary-card-amount {
+        font-size: 28px;
+    }
+
+    /* dashboard — single column stack */
+    .dashboard-widgets {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: none;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .activities-list,
+    .transactions-card,
+    .bills-card,
+    .budget-card,
+    .chart-card,
+    .account-summary,
+    .payment-card-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .dashboard-middle {
+        display: contents;
+    }
+
+    .activities-list {
+        grid-column: 1;
+        grid-row: 1;
+        display: block;
+        align-self: auto;
+    }
+
+    .activities-list > h3 {
+        margin-bottom: 16px;
+    }
+
+    .view-all-activities {
+        margin-top: 0;
+        padding-top: 16px;
+    }
+
+    .transactions-card {
+        grid-column: 1;
+        grid-row: 2;
+        height: auto;
+        max-height: none;
+        overflow: hidden;
+    }
+
+    .transactions-table-wrap {
+        overflow-x: auto;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .transactions-table {
+        width: max-content;
+        min-width: 100%;
+    }
+
+    .transactions-table thead th,
+    .transactions-table tbody td {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+
+    .user-cell .avatar,
+    .user-cell .icon-avatar {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+
+    .main-text {
+        font-size: 13px;
+    }
+
+    .sub-text {
+        font-size: 11px;
+    }
+
+    .bills-card {
+        grid-column: 1;
+        grid-row: 3;
+        display: block;
+        align-self: auto;
+    }
+
+    .bills-card .bills-grid {
+        flex: none;
+    }
+
+    .bills-card .bill-item {
+        height: auto;
+    }
+
+    .budget-card {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: auto;
+    }
+
+    .chart-card {
+        grid-column: 1;
+        grid-row: 5;
+        display: block;
+        align-self: auto;
+    }
+
+    .chart-card .chart-container {
+        flex: none;
+        column-gap: 8px;
+    }
+
+    .bars-wrapper {
+        height: 100px;
+    }
+
+    .bar {
+        width: 12px;
+    }
+
+    .column-label {
+        font-size: 12px;
+    }
+
+    .account-summary {
+        grid-column: 1;
+        grid-row: 6;
+        display: block;
+        align-self: auto;
+    }
+
+    .account-summary .accounts-list,
+    .account-summary .account-item {
+        flex: none;
+    }
+
+    .account-item {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 14px;
+    }
+
+    .account-info {
+        flex: 1;
+        min-width: 0;
+        gap: 10px;
+    }
+
+    .account-name,
+    .account-details {
+        word-break: break-word;
+    }
+
+    .account-balance {
+        font-size: 14px;
+        margin-right: 0;
+        white-space: nowrap;
+    }
+
+    .icon-box {
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+    }
+
+    .bills-card .total-amount {
+        font-size: 24px;
+    }
+
+    .category-item {
+        padding: 14px;
+    }
+
+    .category-name {
+        font-size: 14px;
+    }
+
+    .status-amount {
+        font-size: 14px;
+    }
+
+    .total-budget-box .amount {
+        font-size: 18px;
+    }
+
+    .remaining-amount {
+        font-size: 16px;
+    }
+
+    .payment-card-container {
+        grid-column: 1;
+        grid-row: 7;
+        align-self: auto;
+    }
+
+    .flip-card {
+        width: 100%;
+        max-width: 100%;
+        height: 190px;
+    }
+
+    .card-title,
+    .activities-list > h3,
+    .section-title {
+        font-size: 16px;
+    }
+
+}
